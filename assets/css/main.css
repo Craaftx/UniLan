@@ -177,17 +177,18 @@ html, body {
 }
 
 .unilan-tournament-item {
+  background-color: #333;
   border: 5px solid #0488d3;
   margin: 30px 0px;
   padding: 0px;
 }
 
 #unilan-tournament h1 {
-  background-color: #333;
+  background-color: #353535;
   font-size: 3rem;
   text-transform: uppercase;
   margin: 0px 0px 0px 0px;
-  padding: 0px 0px 10px 10px;
+  padding: 10px 0px 10px 20px;
 }
 
 #unilan-tournament  .unilan-tournament-separator {
@@ -198,11 +199,11 @@ html, body {
 }
 
 #unilan-tournament h4 {
-  background-color: #333;
+  background-color: #353535;
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 0px;
-  padding: 0px 0px 10px 10px;
+  padding: 0px 0px 20px 20px;
   border-bottom: 5px solid #0488d3;
 }
 
