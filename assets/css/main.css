@@ -189,6 +189,13 @@ html, body {
   padding: 0px 0px 10px 10px;
 }
 
+#unilan-tournament  .unilan-tournament-separator {
+  font-weight: 700;
+  background-color: transparent;
+  color: white;
+  padding-left: 0px;
+}
+
 #unilan-tournament h4 {
   background-color: #333;
   font-size: 1.2rem;
@@ -239,7 +246,7 @@ html, body {
 }
 
 .unilan-tournament-register {
-  border-top: 5px solid #0488d3;
+  border-top: 5px solid #333;
   padding: 20px
 }
 
