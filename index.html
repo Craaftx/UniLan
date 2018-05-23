@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>UniLan</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
   <body>
@@ -21,7 +22,7 @@
               <a class="nav-link unilan-link" href="#" onclick="openPage(event, 'unilan-homepage')" id="defaultOpen">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link unilan-link" href="#" onclick="openPage(event, 'unilan-register')">Participer</a>
+              <a class="nav-link unilan-link" href="#" onclick="openPage(event, 'unilan-tournament')">Participer</a>
             </li>
             <li class="nav-item">
               <a class="nav-link unilan-link" href="#" onclick="openPage(event, 'unilan-leaderboard')">Classements</a>
@@ -47,11 +48,65 @@
             </div>
         </div>
       </div>
-      <!-- Register Section -->
-      <div class="unilan-base" id="unilan-register">
-        <div class="container-fluid p-0">
+      <!-- Tournamen Section -->
+      <div class="unilan-base" id="unilan-tournament">
+        <div class="container p-0">
           <div class="row">
-            <div class="col-md-6"></div>
+            <!-- unilan-tournament-item -->
+            <div class="col-md-12 unilan-tournament-item">
+              <h1>LAN #1</h1>
+              <h4>Terminée - 22/05/2018</h4>
+              <div class="unilan-tournament-player-boxes">
+                <h3>Joueurs :</h3>
+                <span class="player-box-winner"><i class="fas fa-trophy"></i> Dorian G.</span>
+                <span class="player-box"><i class="far fa-user-circle"></i> Jean M.</span>
+                <span class="player-box"><i class="far fa-user-circle"></i> Olivier A.</span>
+                <span class="player-box"><i class="far fa-user-circle"></i> Kevin R.</span>
+                <span class="player-box"><i class="far fa-user-circle"></i> Romain B.</span>
+              </div>
+              <div class="unilan-tournament-game-boxes">
+                <h3>Jeux du tournoi :</h3>
+                <span class="game-box"><i class="fas fa-gamepad"></i> Overwatch</span>
+                <span class="game-box"><i class="fas fa-gamepad"></i> Fortnite</span>
+                <span class="game-box"><i class="fas fa-gamepad"></i> Minecraft</span>
+                <span class="game-box"><i class="fas fa-gamepad"></i> Gang Beast</span>
+                <br><br>
+                <span class="m-2">PS : D'autres jeux seront disponibles sur place mais ne seront pas joués dans le tournoi</span>
+              </div>
+              <div class="unilan-tournament-register">
+                <h3> S'inscrire : </h3>
+                <form class="custom-form-big">
+                  <div class="form-row">
+                    <div class="col-4">
+                      <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col-4">
+                      <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control" placeholder="Pseudo">
+                    </div>
+                  </div>
+                  <div class="form-row">    
+                    <div class="col-2 pt-5">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Je possède la 4G</label>
+                      </div>
+                    </div>
+                    <div class="col-6 pt-5">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">J'ai un VPN</label>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <button class="btn custom-full-btn">Voter</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -52,7 +52,10 @@ html, body {
   top: 0;
   width: 100%;
   height: 200px;
-  background-image: linear-gradient(to bottom right, #0488d3, #0488d3 50%, transparent 50%, transparent);
+  background-image: -webkit-linear-gradient(to bottom right, #0488d3, #0488d3 50%, transparent 50%, transparent); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image:    -moz-linear-gradient(to bottom right, #0488d3, #0488d3 50%, transparent 50%, transparent); /* For Firefox (3.6 to 15) */
+  background-image:      -o-linear-gradient(to bottom right, #0488d3, #0488d3 50%, transparent 50%, transparent); /* For old Opera (11.1 to 12.0) */ 
+  background-image:         linear-gradient(to bottom right, #0488d3, #0488d3 50%, transparent 50%, transparent); /* Standard syntax; must be last */
 }
 
 .unilan-homepage-header .navbar-custom {
@@ -103,12 +106,13 @@ html, body {
   background-color: #444;
   color: white;
   min-height: 100vh;
-  padding-top: 200px;
+  padding: 200px 0px 0px 100px;
 }
 
 .unilan-sondage-title {
   font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase;
+  padding: 20px;
 }
 
 .unilan-sondage-checkboxes {
@@ -161,4 +165,84 @@ html, body {
 
 .custom-form-big .custom-full-btn:focus, .custom-full-btn.focus {
   box-shadow: 0 0 0 0.2rem #333;
+}
+
+/* Participer Style */
+#unilan-tournament {
+  padding-top: 200px;
+  min-height: 100vh;
+  color: white;
+  background-color: #444;
+}
+
+.unilan-tournament-item {
+  border: 5px solid #0488d3;
+  margin: 30px 0px;
+  padding: 0px;
+}
+
+#unilan-tournament h1 {
+  background-color: #333;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 10px 10px;
+}
+
+#unilan-tournament h4 {
+  background-color: #333;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 0px 0px 10px 10px;
+  border-bottom: 5px solid #0488d3;
+}
+
+#unilan-tournament h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 0px 10px 20px 10px;
+}
+
+#unilan-tournament .player-box {
+  font-weight: 700;
+  outline: 2px solid #555555;
+  border-left: 5px solid whitesmoke;
+  background-color: #333;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+#unilan-tournament .player-box-winner {
+  font-weight: 700;
+  border: 2px solid #ffa500;
+  background-color: #333;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+#unilan-tournament .game-box {
+  font-weight: 700;
+  outline: 2px solid #555555;
+  border-left: 5px solid #0488d3;
+  background-color: #333;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+.unilan-tournament-player-boxes {
+  padding: 20px;
+}
+
+.unilan-tournament-game-boxes {
+  padding: 20px;
+}
+
+.unilan-tournament-register {
+  border-top: 5px solid #0488d3;
+  padding: 20px
+}
+
+#unilan-tournament .custom-form-big .custom-full-btn {
+  margin: 10px 0px;
 }
