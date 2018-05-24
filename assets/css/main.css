@@ -278,6 +278,7 @@ html, body {
 
 /* leaderboard-css */
 #unilan-leaderboard {
+  min-height: 100%;
   padding-top: 200px;
   background-color: #333;
   color: white;
